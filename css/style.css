@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -113,7 +113,6 @@ main .Somos{
     font-size: 1.8em;
 }
 
-
 /* apartado para servicios */
 #servicios {
     background-color: rgb(30, 30, 30);
@@ -130,7 +129,6 @@ main .Somos{
     align-items: center;
     padding-bottom: 20px;
 }
-
 
 #servicios .carta{
     background-position: center center;
@@ -161,6 +159,211 @@ main .Somos{
 }
 
 
+/* Css para Ayudantia */
+
+
+
+/* Css para Practica */
+
+
+
+
+/* Css para Busqueda de Trabajo */
+
+
+
+/* Boton Formulario*/
+
+.contenido article .btn-abrir-popup {
+	padding: 0 20px;
+	margin: 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #FF3368;
+	border-radius: 4px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	transition: .3s ease all;
+	cursor: pointer;
+    border: 2px solid white;
+}
+
+.contenido article .btn-abrir-popup:hover {
+    background-color: transparent;
+    border: 2px solid #FF3368;
+    color: #FF3368;
+}
+
+/* Apartado Ventana Emergente*/
+.overlay {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay.active {
+	visibility: visible;
+}
+
+.popup {
+	background-color: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 1em;
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	width: 700px;
+    padding:  10px ;
+	text-align: right;
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+
+.popup h3 {
+    font-size: 24px;
+    color: blueviolet;
+	font-weight: 600;
+	opacity: 0;
+    text-align: center;
+}
+
+.popup h4 {
+	font-weight: 300;
+	margin-bottom: 20px;
+	opacity: 0;
+    text-align: center;
+}
+
+/* apartado para el formulario */
+
+#cont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form_container > .cont{
+    grid-column:1 span;
+}
+
+.cont {
+    display: grid;
+}
+
+.form_container > .textarea {
+    margin-left: 15px;
+    margin-top: 10px;
+    grid-column: 2 span;
+}
+
+
+.form_container label{
+    text-align: left;
+    margin: 15px 0px 0px 10px;
+}
+
+.form_input {
+    font-size: 16px;
+    padding: 12px 16px;
+    outline: none;
+    border: none;
+    border: 1px outset #bbb0b0;
+    border-radius: 0.2em;
+    margin-left: 10px;
+}
+
+.form_input--message {
+    padding: 30px 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border: 1px outset #bbb0b0;
+}
+
+
+.popup .btn-cerrar-popup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup .btn-cerrar-popup:hover {
+	color: #000;
+}
+
+.popup form .btn-submit {
+	padding: 0 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #FF3368;
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+    border: 2px solid #FF3368;
+}
+
+.popup form .btn-submit:hover {
+    background-color: transparent;
+    border: 2px solid #FF3368;
+    color: #FF3368;
+}
+
+/* ------------------------- */
+/* ANIMACIONES */
+/* ------------------------- */
+.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
+.popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup.active .contenido-inputs { animation: entradaInputs 1s linear 1s forwards; }
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaInputs {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
 
 
 
