@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="img-logo" src="img/UCT_logo-1024x342.png">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Ayudantias.html">Ayudantias</a></li>
+                <li><a href="Practicas.html">Practicas</a></li>
+                <li><a href="Trabajos.html">Trabajos</a></li>
+            </ul>
+        </nav>
+        <div id="login">
+            <a class="btn" href="Login.html">Login</a>
+        </div>
+    </header>
+    <hr>
+
+    
+
+    <div class="contenido">
+		<article>
+			<button id="btn-abrir-popup" class="btn-abrir-popup">
+                Crea tu propuesta para una práctica
+            </button>
+		</article>
+
+		<div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class='bx bx-x'></i></a>
+				<h3>Crea Tu propuesta</h3>
+				<h4>Recuerda, es 100% <b>Gratis</b></h4>
+				<form action="form">
+                    <div class="form_container" id="cont">
+                        <div class="cont">                    
+                            <label for="empresa">Nombre de la empresa</label>
+                            <input class="form_input" id="empresa" type="text">
+                        </div>
+         
+                        <div class="cont">                        
+                            <label for="nomb">Nombre y Apellido del Contacto</label>
+                            <input class="form_input" id="nomb" type="text">
+                        </div>
+        
+                        <div class="cont">                        
+                            <label for="correo">Correo</label>
+                            <input class="form_input" id="correo" type="email"  placeholder="Ej: example@example.ex">
+                        </div>
+        
+                        <div class="cont">                        
+                            <label for="tell">Numero de Teléfono</label>
+                            <input class="form_input" id="tell" type="tel" placeholder="+569 12345678"  >
+                        </div>
+
+                        <div class="cont">                        
+                            <label for="cargo">Cargo a Realizar</label>
+                            <input class="form_input" id="cargo" type="text" placeholder="ej: Encargado de Cominicaciones">
+                        </div>
+
+                        <div class="cont">                        
+                            <label for="nose">Extra</label>
+                            <input class="form_input" id="nose" type="text" placeholder="ej: Información extra">
+                        </div>
+
+
+                        <div class="cont textarea">                        
+                            <textarea class="form_input--message  ckeditor" id="ckeditor" name="Requisitos" >
+                                <p>
+                                    <b>Descripcion de la práctica</b>
+                                    <br><br>
+                                    <b>disponibilidad</b>
+                                    <br><br>
+                                    <b>Requisitos</b>  
+                                    <ul>
+                                        <li>Requisitos 1</li>
+                                        <li>Requisitos 2</li>
+                                        <li>Requisitos 3</li>
+                                    </ul>
+                                    <b>Extra</b><br>
+                                    Puede agregar el link de la empresa
+                                </p></textarea>
+                        </div>
+        
+                    </div>
+					<input type="submit" class="btn-submit" value="Subir propuesta">
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+    <hr>
+    <footer>
+        <p>&copy; Derechos Reservados 2022</p>
+        <p><i>Universidad Catolica de Temuco</i></p>
+    </footer>
+
+
+    <script src="JS/script.js"></script>
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+</body>
+</html>
