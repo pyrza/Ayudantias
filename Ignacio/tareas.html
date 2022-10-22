@@ -1,0 +1,37 @@
+<!-- Diseno del formulario con identificadores para conectar php y js -->
+
+<form action="trabajo.php" id="formCon" method="POST">
+    <div class="form_container" id="cont">
+        <div class="cont">                    
+            <label for="empresa">Nombre de la empresa</label>
+            <input class="form_input" id="empresa" name="empresa" type="text">
+        </div>
+
+        <div class="cont">                        
+            <label for="nomb">Nombre y Apellido del Contacto</label>
+            <input class="form_input" id="nomb" name="nombre" type="text">
+        </div>
+
+        <div class="cont">                        
+            <label for="correo">Correo</label>
+            <input class="form_input" id="correo" name="correo" type="email"  placeholder="Ej: example@example.ex">
+        </div>
+
+        <div class="cont">                        
+            <label for="tell">Numero de Telefono</label>
+            <input class="form_input" id="tell" name="tell" type="tel" placeholder="+569 12345678"  >
+        </div>
+
+        <div class="cont">                        
+            <label for="cargo">Cargo a Realizar</label>
+            <input class="form_input" id="cargo" name="cargo" type="text" placeholder="ej: Encargado de Cominicaciones">
+        </div>
+
+
+        <div class="cont textarea">                        
+            <textarea class="form_input--message ckeditor" id="ckeditor"  name="Comentario" ></textarea>
+        </div>
+
+    </div>
+    <input type="submit" class="btn-submit" value="Subir propuesta" id="EnvCom" name="EnvCom">
+</form>
