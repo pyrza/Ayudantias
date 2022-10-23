@@ -29,8 +29,8 @@ btnCerrarPopup.addEventListener('click', function(e){
 	popup.classList.remove('active');
 });
 
-// Enviar--------------------------------------
 
+// Enviar--------------------------------------
 $('#EnvCom').click(function () {
 	var datos = $('#formCon').serialize();
 	$.ajax({
@@ -40,6 +40,7 @@ $('#EnvCom').click(function () {
 		success: function (r) {
 			if (r == 1) {
 				alert("Registrados con exito");
+				location.reload();
 			} else {
 				alert("ERROR......");
 			}
@@ -48,7 +49,6 @@ $('#EnvCom').click(function () {
 
 	return false;
 });
-
 
 // Llamando a la función getData()
 getData()
