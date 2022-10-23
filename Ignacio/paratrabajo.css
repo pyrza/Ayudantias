@@ -1,0 +1,86 @@
+.buscador{
+    text-align: center;
+}
+.buscador h2{
+    color: blueviolet;
+}
+
+.info_trabajos {
+    max-width: 900px;
+    margin: auto;
+}
+
+.contenedorinfo {
+    width:900px;
+	height:400px;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.contenedorinfo > .empresa{
+    grid-column: 3/3;
+}
+.contenedorinfo > .fecha{
+    grid-column: 5/5;
+}
+
+.contenedorinfo > .palabras{
+    grid-column: 2/2;
+}
+
+.contenedorinfo > .contacto, .cargo{
+    grid-column: 3/5;
+}
+
+.contenedorinfo > .texto{
+    grid-column: -1/1;
+}
+
+.contenedorinfo > .tell{
+    grid-column: 2/2 span;
+} 
+
+.contenedorinfo > .correo{
+    grid-column: 5/5 span;
+}
+
+.texto{
+    height: 150px;
+    overflow: auto;
+    
+    margin-left: 20px;
+}
+
+.empresa, .fecha{
+    color: blueviolet;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.palabras{
+    text-align: end;
+}
+
+.contenedorinfo a{
+    display: block;
+    padding-top: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: #FF3368;
+    border: 1px solid #FF3368;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+}
+
+.contenedorinfo a:hover{
+    border: 1px solid rgb(235 ,235 ,235);
+    color: rgb(235 ,235 ,235);
+    background-color: #FF3368;
+}
