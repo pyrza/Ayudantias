@@ -27,14 +27,16 @@ $html = '';
 // 'NomEmpresa', 'NomApeContacto', 'correo', 'telefono', 'cargo', 'texto', 'fecha'
 if ($num_rows > 0) {
     while ($row = $resultado->fetch_assoc()) {
-        $html .= '<div>';
-        $html .= '<h2>' . $row['NomEmpresa'] . '</h2>';
-        $html .= '<p>' . $row['NomApeContacto'] . '</p>';
-        $html .= '<p>' . $row['correo'] . '</p>';
-        $html .= '<p>' . $row['telefono'] . '</p>';
-        $html .= '<p>' . $row['cargo'] . '</p>';
-        $html .= '<p>' . $row['texto'] . '</p>';
-        $html .= '<p>' . $row['fecha'] . '</p>';
+        $html .= '<div class="contenedorinfo">';
+        $html .= '<h2 class="empresa mostr">' . $row['NomEmpresa'] . '</h2>';
+        $html .= '<p class="fecha mostr">' . $row['fecha'] . '</p>';
+        $html .= '<p class="palabras mostr">Encargado:</p>';
+        $html .= '<p class="contacto mostr">' . $row['NomApeContacto'] . '</p>';
+        $html .= '<p class="palabras mostr">Cargo Solicitado:</p>';
+        $html .= '<p class="cargo mostr">' . $row['cargo'] . '</p>';
+        $html .= '<p class="texto mostr">' . $row['texto'] . '</p>';
+        $html .= '<p class="tell mostr">Telefono: ' . $row['telefono'] . '</p>';
+        $html .= '<a class="correo mostr" href="mailto:'. $row['correo'] .'">Enviar Correo</a>';
         $html .= '</div>';
         
     }
