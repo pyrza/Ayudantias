@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es"  >
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-7mQhpDl5nRA5nY9lr8F1st2NbIly/8WqhjTp+0oFxEA/QUuvlbF6M1KXezGBh3Nb" crossorigin="anonymous">
+
+    <title></title>
+  </head>
+  <body>
+    
+
+
+    <div>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, beatae!</h1>      
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">abrir modal</button>
+
+        
+    </div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">titulo</h1>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, consequuntur.</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        
+      </div>
+      <div class="modal-body">
+        <form name="form" action="registro.php" method="post">
+                    
+
+            nombre de empresa:
+            <br>
+             <input type="text" name="nombreEmpresa" required> <p></p>
+          
+             nombre
+             <br>
+            <input type="text" name="nombreContacto" required> <p></p>
+            
+              apellido
+            <br>
+           <input type="text" name="apellidoContacto" required> <p></p>
+           correo
+           <br>
+
+           <input type="email" name="correo" required > <p></p>
+           
+           numero telefonico: 
+           <br>
+           <input type="number" name="numeroTelefono" required > <p></p>
+          
+          cargo a realizar
+          <br>
+          <input type="text" name="cargoARealizar" required > <p></p>
+          
+          descripcion
+          <br>
+
+          <input type="text" name="descripcion" required > <p></p>
+
+          <!-- <img src="gato.png" alt="" > -->
+          <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+          <button type="submit" class="btn btn-primary">enviar</button>
+
+   
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    -->
+  </body>
+
+  <style>
+/*       img{
+        position: relative;
+        width: 150px;
+        height: 300px;
+        left: 200px;
+        top: 300px 
+
+
+      } */
+
+      .img{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        
+        
+
+
+      }
+  </style>
+</html>

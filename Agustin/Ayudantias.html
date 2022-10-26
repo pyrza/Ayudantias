@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="img-logo" src="img/UCT_logo-1024x342.png">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Ayudantias.html">Ayudantias</a></li>
+                <li><a href="Practicas.html">Practicas</a></li>
+                <li><a href="Trabajos.html">Trabajos</a></li>
+            </ul>
+        </nav>
+        <div id="login">
+            <a class="btn" href="Login.html">Login</a>
+        </div>
+    </header>
+
+
+
+    <hr class="as">
+    <div id="container" >
+
+        <h2>Ayudantías</h2>
+
+            
+
+    </div>
+    
+    <br><br><br>
+    <div id="info">
+        En este apartado podrás solicitar ayudantías pagadas hechas por otros estudiantes que se sientan capacitados para realizarlas. También podrás comunicarte con ellos, y calificarlos en una escala del 1 al 10 la ayuda que has recibido.    
+        
+        <img src="img/bibliotecauct.jpg" style="width: 300px; height: 200px; margin: 10px;" alt="">
+    </div>
+
+    <div id="info2">
+        También podrás postular para ser ayudante. Para ello deberás rellenar un formulario con tus datos, y acto seguido realizar un diagnóstico el cual va a depender de la materia que deseas emplear. Dependiendo de tu desempeño en el diagnostico podrás realizar ayudantías.
+
+        
+    </div>
+
+
+    <div id="info3">
+        si tienes dudas al respecto, no dudes en contactarnos!!
+        <br>
+        
+        ayudantias@gmail.com
+
+
+        
+    </div>
+
+    <br><br>
+
+
+    <a href="#" class="btn2">solicitar ayudantía</a>
+    <br><br>
+    <a href="#" class="btn3">postular ser ayudante</a>
+
+
+    <hr>
+    
+    <style>
+        #container
+        {
+            position: relative;
+            left: 260px;
+            height: 180px;
+            width: 950px;
+            border: 1px black solid;
+            background: url("img/bibliotecauct.jpg")center;
+            border-radius: 10px;
+            color: darkslateblue;
+    
+            
+
+        }
+        #container h2{
+            font-size: 380%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            top: 40px;
+            text-align: center;
+
+        }
+
+        #info{
+            margin: 90px;
+            background-color: darkviolet;            
+            width: 850px;
+            height: 450px;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            border-radius: 20px;
+
+        }
+
+        #info2{
+            margin: 250px;
+            background-color: #FF3368;;          
+            width: 850px;
+            height: 450px;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            border-radius: 20px;
+
+        }
+
+        #info3{
+            margin: 90px;
+            background-color: darkcyan;            
+            width: 850px;
+            height: 450px;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+
+
+        }
+        /* -------------------------------------------------------------------------*/
+
+        .btn2{
+            position: relative;
+            left: 600px;
+            background: #FF3368;
+            color: #ffffff;
+            border-radius:7px;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            padding: 20px 50px;
+            font-size: 1.5rem;
+            position: relative;
+            margin: 32px;
+            width: 170px;
+            height: 50px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn2::after, .btn2:before{
+            content: "";
+            position: absolute;
+            opacity: 0.3;
+            background: #FF3368;
+            border-radius: inherit;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: transform 0.3s ease;
+            
+        }
+        
+        .btn2:hover{
+            transform: translate(-12px, -12px);
+        }
+        
+        .btn2:hover::after{
+            transform: translate(6px, 6px);
+        }
+        
+        .btn2:hover::before{
+            transform: translate(12px, 12px);
+        }
+
+        .btn3{
+            position: relative;
+            left: 600px;
+            background: darkviolet;
+            color: #ffffff;
+            border-radius:7px;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            padding: 20px 50px;
+            font-size: 1.5rem;
+            position: relative;
+            margin: 32px;
+            width: 170px;
+            height: 50px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn3::after, .btn3:before{
+            content: "";
+            position: absolute;
+            opacity: 0.3;
+            background: darkviolet;
+            border-radius: inherit;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: transform 0.3s ease;
+            
+        }
+        
+        .btn3:hover{
+            transform: translate(-12px, -12px);
+        }
+        
+        .btn3:hover::after{
+            transform: translate(6px, 6px);
+        }
+        
+        .btn3:hover::before{
+            transform: translate(12px, 12px);
+        }
+
+
+        /*----------------------------------------------------------------------------*/
+    
+
+
+
+
+
+
+    </style>
+    <footer>
+        <p>&copy; Derechos Reservados 2022</p>
+        <p><i>Universidad Catolica de Temuco</i></p>
+    </footer>
+
+
+
+</body>
+</html>
+</html>
