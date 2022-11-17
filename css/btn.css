@@ -1,0 +1,8 @@
+.contenido article .btn-abrir-popup {
+display: none;
+}
+
+.boton-editar,
+.boton-eliminar{
+display: none;
+}
