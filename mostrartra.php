@@ -14,8 +14,7 @@ $campo = isset($_POST['campo']) ? $conex->real_escape_string($_POST['campo']) : 
 
 
 /* Hacemos la consulta a la tabla de la BS*/
-$sql = "SELECT " . implode(", ", $columns) . "
-FROM $table";
+$sql = "SELECT NomEmpresa, NomApeContacto, correo, telefono, cargo, texto, fecha FROM trabajos";
 $resultado = $conex->query($sql);
 $num_rows = $resultado->num_rows;
 
@@ -30,13 +29,16 @@ if ($num_rows > 0) {
         $html .= '<div class="contenedorinfo">';
         $html .= '<h2 class="empresa mostr">' . $row['NomEmpresa'] . '</h2>';
         $html .= '<p class="fecha mostr">' . $row['fecha'] . '</p>';
+        $html .= '<p class="texto mostr">' . $row['texto'] . '</p>';
         $html .= '<p class="palabras mostr">Encargado:</p>';
         $html .= '<p class="contacto mostr">' . $row['NomApeContacto'] . '</p>';
         $html .= '<p class="palabras mostr">Cargo Solicitado:</p>';
         $html .= '<p class="cargo mostr">' . $row['cargo'] . '</p>';
-        $html .= '<p class="texto mostr">' . $row['texto'] . '</p>';
-        $html .= '<p class="tell mostr">Telefono: ' . $row['telefono'] . '</p>';
+        $html .= '<p class="palabras mostr">Telefono:</p>';
+        $html .= '<p class="tell mostr">' . $row['telefono'] . '</p>';
         $html .= '<a class="correo mostr" href="mailto:'. $row['correo'] .'">Enviar Correo</a>';
+        $html .= '<button class="boton-editar" type="button" onclick="editar(${value.id}) ">Editar</button>';
+        $html .= '<button class="boton-eliminar" type="button" onclick="eliminar(${value.id})">Eliminar</button>';
         $html .= '</div>';
         
     }

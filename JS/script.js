@@ -1,8 +1,8 @@
 // JS para login (Registro e Inicio de Secion)
-const $btnSignIn= document.querySelector('.sign-in-btn'),
-      $btnSignUp = document.querySelector('.sign-up-btn'),  
-      $signUp = document.querySelector('.sign-up'),
-      $signIn  = document.querySelector('.sign-in');
+const 	$btnSignIn= document.querySelector('.sign-in-btn'),
+    	$btnSignUp = document.querySelector('.sign-up-btn'),  
+    	$signUp = document.querySelector('.sign-up'),
+    	$signIn  = document.querySelector('.sign-in');
 
 document.addEventListener('click', e => {
     if (e.target === $btnSignIn || e.target === $btnSignUp) {
