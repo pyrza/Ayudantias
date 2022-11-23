@@ -1,6 +1,6 @@
 <?php
 
-$conexxx=mysqli_connect("db.inf.uct.cl","A2021_ibustos","A2021_ibustos","A2021_ibustos");
+$conexxx=mysqli_connect("db.inf.uct.cl","A2022_ejaramillo","A2022_ejaramillo","A2022_ejaramillo");
 
 $emp=$_POST['empresa'];
 $Nom=$_POST['nombre'];
