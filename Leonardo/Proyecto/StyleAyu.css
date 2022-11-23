@@ -1,0 +1,141 @@
+.buscador{
+    text-align: center;
+}
+.buscador h2{
+    color: blueviolet;
+}
+
+.info_ayuda {
+    max-width: 900px;
+    margin: auto;
+}
+
+.contenedorinfo {
+    width:900px;
+	height:400px;
+    border: 1px solid blueviolet;
+    background-color: #E6E6E6;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.contenedorinfo > .empresa{
+    grid-column: 2/5;
+}
+.contenedorinfo > .fecha{
+    grid-column: 5/5;
+}
+
+.contenedorinfo > .palabras{
+    grid-column: 4/4;
+}
+
+.contenedorinfo > .contacto,
+.contenedorinfo > .cargo,
+.contenedorinfo > .tell {
+    grid-column: 5/5;
+}
+
+.contenedorinfo > .texto{
+    grid-column: 1/4;
+    grid-row: 3 span;
+}
+
+.contenedorinfo > .correo{
+    grid-column: 1/1 ;
+}
+
+.contenedorinfo > .boton-editar{
+    grid-column: 4/4;
+}
+
+.contenedorinfo > .boton-eliminar{
+    grid-column: 5/5;
+}
+
+.texto{
+    height: 260px;
+    overflow: auto;
+
+    margin-left: 20px;
+    border: blueviolet 1px solid;
+    border-radius: 10px;
+}
+
+
+.empresa, .fecha{
+    color: blueviolet;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.palabras{
+    text-align: end;
+}
+
+.correo{
+    margin: auto;
+}
+
+.contenedorinfo a{
+    display: block;
+    padding-top: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: #FF3368;
+    border: 1px solid #FF3368;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+}
+
+.contenedorinfo a:hover{
+    border: 1px solid rgb(235 ,235 ,235);
+    color: rgb(235 ,235 ,235);
+    background-color: #FF3368;
+}
+
+.boton-editar,
+.boton-eliminar{
+    text-align: center;
+    margin: 3px 10px;
+    color: #FF3368;
+    background-color: #E6E6E6;
+    border: 1px solid #FF3368;
+    border-radius: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+.boton-editar:hover,
+.boton-eliminar:hover{
+    background-color: #FF3368;
+    color: aliceblue;
+}
+
+.contenido article .btn-abrir-popup {
+	padding: 0 20px;
+	margin: 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #FF3368;
+	border-radius: 4px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	transition: .3s ease all;
+	cursor: pointer;
+    border: 2px solid white;
+}
+
+.contenido article .btn-abrir-popup:hover {
+    background-color: transparent;
+    border: 2px solid #FF3368;
+    color: #FF3368;
+}
